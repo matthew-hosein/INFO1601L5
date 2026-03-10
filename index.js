@@ -1,35 +1,30 @@
-// Task 2
 let radius = 7;
 const pi = 3.14;
 let area = radius * radius * pi;
 console.log(area);
 
-// Task 3
 let name = "bob";
 let age = 24;
 
-console.log(typeof name); // string
-console.log(typeof age);  // number
+console.log(typeof name);
+console.log(typeof age);
 
 console.log(`Hello my name is ${name}, I'm ${age} years old`);
 console.log(`I was born in ${2020 - age}`);
 
-// Task 4.1
-console.log('1' == 1);          // true
-console.log(1 == true);         // true
-console.log("false" == false);  // false
-console.log("false" == true);   // false
+console.log('1' == 1);
+console.log(1 == true);
+console.log("false" == false);
+console.log("false" == true);
 
 if ("false") {
   console.log("Hello false!");
 }
 
-// Task 4.2
-console.log('1' === 1);       // false
-console.log(1 === true);      // false
-console.log("true" === true); // false
+console.log('1' === 1);
+console.log(1 === true);
+console.log("true" === true);
 
-// If statement example
 let grade = 67;
 
 if (grade < 50) {
@@ -38,19 +33,16 @@ if (grade < 50) {
   console.log("Passed");
 }
 
-// While loop example
 let num = 0;
 while (num < 10) {
   console.log(num);
   num++;
 }
 
-// For loop example
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 
-// Task 4.3 - FizzBuzz
 for (let i = 1; i <= 50; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
     console.log("fizzbuzz");
@@ -63,7 +55,6 @@ for (let i = 1; i <= 50; i++) {
   }
 }
 
-// Dates
 let nowTimestamp = Date.now();
 console.log(nowTimestamp);
 
@@ -77,7 +68,6 @@ let difference = now - date;
 let daysBetween = difference * 1.15741e-8;
 console.log(daysBetween);
 
-// Math
 console.log(Math.sqrt(9));
 console.log(Math.pow(2, 3));
 console.log(Math.floor(12.3453));
@@ -91,7 +81,6 @@ function randInt(min, max) {
 
 console.log(randInt(1, 10));
 
-// Functions
 function hello() {
   console.log("hello");
 }
@@ -104,7 +93,6 @@ function addNums(a, b = 10) {
 console.log(addNums(5, 11));
 console.log(addNums(2));
 
-// Task 5 - Callbacks
 function happyPrint(string) {
   console.log(": " + string);
 }
@@ -121,15 +109,10 @@ function add(a, b, callback) {
 add(5, 10, happyPrint);
 add(11, 12, sadPrint);
 
-// Timing
 function printDate() {
   console.log(new Date().toLocaleTimeString());
 }
 
-// Uncomment if your lab asks you to demonstrate it
-// setInterval(printDate, 1000);
-
-// Arrays
 let arr = [-5, 16, 33, 42, 103, 344];
 console.log(arr.includes(-5));
 
@@ -149,7 +132,6 @@ let reversed = [...arr].reverse();
 console.log(reversed);
 console.log(arr.join("-"));
 
-// Task 5.2
 let arr2 = [12, 33, 4, 5, -4, 8, 19, 25];
 
 function double(num) {
@@ -176,7 +158,6 @@ function intCompare(a, b) {
 let ascending = [...arr2].sort(intCompare);
 console.log(ascending);
 
-// Objects
 let person = {
   name: "John",
   age: 12
